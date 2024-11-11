@@ -10,6 +10,7 @@ function generateRandomNumber(number) {
 function displaySpeaker(number) {
     const speaker = persons[number - 1];
     console.log(number, speaker);
+    document.getElementById("speakerName").textContent = speaker;
 }
 
 const number = generateRandomNumber(persons.length);
