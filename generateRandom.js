@@ -26,17 +26,10 @@ class Random {
     }
 }
 
-
-// 乱数を10個生成して表示
-for(let i = 20241118; i < 20241135; i++) {
-    const random = new Random(i);
-    console.log(random.next());
-    console.log(random.next() % 6);
+function getTodayNumber(){
+  let today = new Date();
+  return today.getFullYear() * 10000 + (today.getMonth()+1) * 100 + today.getDate();
 }
 
-console.log(new Random(20241119).next() % 6);
-console.log(new Random(20241120).next() % 6);
-console.log(new Random(20241126).next() % 6);
-console.log(new Random(20241127).next() % 6);
-console.log(new Random(20241203).next() % 6);
-console.log(new Random(20241204).next() % 6);
+console.log(getTodayNumber());
+console.log(Math.abs(new Random(getTodayNumber()).next()) % 6);
