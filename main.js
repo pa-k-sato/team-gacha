@@ -1,17 +1,13 @@
 // 乱数　＞　人に変換
 const persons = ['tokita', 'fukui', 'sato', 'watanabe', 'wada', 'tran'];
 
-// 乱数を生成する関数をつくって
-function generateRandomNumber(number) {
-    const randomNumber = Math.floor(Math.random() * number + 1);
-    return randomNumber;
-}
-
 function displaySpeaker(number) {
     const speaker = persons[number - 1];
     console.log(number, speaker);
     document.getElementById("speakerName").textContent = speaker;
 }
 
-const number = generateRandomNumber(persons.length);
-displaySpeaker(number);
+setTimeout(() => {
+    const number = Math.abs(new Random(getTodayNumber()).next()) % 6;
+    displaySpeaker(number);
+}, 1500);
