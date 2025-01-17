@@ -2,7 +2,7 @@
 const persons = ['tokita', 'fukui', 'sato', 'watanabe', 'wada', 'tran'];
 
 function displaySpeaker(number) {
-    const speaker = persons[number - 1];
+    const speaker = persons[number];
     console.log(number, speaker);
     document.getElementById("speakerName").textContent = speaker;
 }
