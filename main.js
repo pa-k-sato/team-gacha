@@ -1,5 +1,5 @@
 // 乱数　＞　人に変換
-const persons = ['tokita', 'fukui', 'sato', 'watanabe', 'wada', 'tran'];
+const persons = ['fukui', 'sato', 'watanabe', 'wada', 'tran'];
 
 function displaySpeaker(number) {
     const speaker = persons[number];
@@ -8,6 +8,6 @@ function displaySpeaker(number) {
 }
 
 setTimeout(() => {
-    const number = Math.abs(new Random(getTodayNumber()).next()) % 6;
+    const number = Math.abs(new Random(getTodayNumber()).next()) % persons.length;
     displaySpeaker(number);
 }, 1500);

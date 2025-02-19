@@ -30,6 +30,3 @@ function getTodayNumber(){
   let today = new Date();
   return today.getFullYear() * 10000 + (today.getMonth()+1) * 100 + today.getDate();
 }
-
-console.log(getTodayNumber());
-console.log(Math.abs(new Random(getTodayNumber()).next()) % 6);
