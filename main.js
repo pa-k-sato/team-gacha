@@ -8,6 +8,7 @@ function displaySpeaker(number) {
 }
 
 setTimeout(() => {
-    const number = Math.abs(new Random(getTodayNumber()).next()) % persons.length;
+    const todayRandomNumber = new Random(getTodayNumber(new Date())).next();
+    const number = Math.abs(todayRandomNumber) % persons.length;
     displaySpeaker(number);
 }, 1500);

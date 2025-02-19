@@ -26,7 +26,6 @@ class Random {
     }
 }
 
-function getTodayNumber(){
-  let today = new Date();
-  return today.getFullYear() * 10000 + (today.getMonth()+1) * 100 + today.getDate();
+function getTodayNumber(date){
+  return date.getFullYear() * 10000 + (date.getMonth()+1) * 100 + date.getDate();
 }
