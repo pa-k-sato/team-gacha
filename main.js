@@ -1,5 +1,5 @@
 // 乱数　＞　人に変換
-const persons = ['fukui', 'sato', 'watanabe', 'wada', 'tran'];
+const persons = ['fukui', 'sato', 'watanabe', 'wada'];
 
 function displaySpeaker(number) {
     const speaker = persons[number];
